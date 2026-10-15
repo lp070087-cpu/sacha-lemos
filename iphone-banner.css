@@ -1,0 +1,102 @@
+
+/* BANNER COM MOLDURA DE IPHONE */
+
+.hero-image {
+  position: relative !important;
+  min-height: 690px !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+  background: #e8e2d8 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 25px;
+  overflow: hidden;
+}
+
+/* Estrutura do iPhone */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: min(75%, 340px);
+  aspect-ratio: 9 / 19.5;
+  border: 8px solid #1b1b1b;
+  border-radius: 48px;
+  background: #111;
+  box-shadow:
+    0 25px 65px rgba(0,0,0,.24),
+    inset 0 0 0 2px #555;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* Vídeo dentro da tela */
+.hero-image video {
+  position: relative !important;
+  inset: auto !important;
+  display: block;
+  width: min(75%, 340px) !important;
+  height: auto !important;
+  aspect-ratio: 9 / 19.5;
+  object-fit: contain !important;
+  background: #111;
+  border: 8px solid transparent;
+  border-radius: 48px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Câmera superior */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -340px);
+  width: 88px;
+  height: 22px;
+  border-radius: 30px;
+  background: #111;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-image .image-label {
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #49423b;
+  font-size: 10px;
+}
+
+@media(max-width:950px) {
+  .hero-image {
+    min-height: 620px !important;
+    padding: 35px 20px;
+  }
+
+  .hero-image::after {
+    transform: translate(-50%, -300px);
+  }
+}
+
+@media(max-width:650px) {
+  .hero-image {
+    min-height: 590px !important;
+    padding: 25px 15px;
+  }
+
+  .hero-image::before,
+  .hero-image video {
+    width: min(75%, 270px) !important;
+  }
+
+  .hero-image::after {
+    transform: translate(-50%, -265px);
+  }
+}
+
+
+/* CORRECAO DA TELA DO IPHONE */
+.hero-image video{position:relative!important;display:block!important;visibility:visible!important;opacity:1!important;z-index:2!important;object-fit:cover!important;background:transparent!important;padding:0!important;border:8px solid transparent!important}

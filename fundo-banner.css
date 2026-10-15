@@ -1,0 +1,105 @@
+
+/* ANTES E DEPOIS — FUNDO DO BANNER */
+
+.hero-image {
+  background-color: #e8e2d8 !important;
+
+  background-image:
+    linear-gradient(
+      to right,
+      #e8e2d8 0%,
+      rgba(232,226,216,.15) 17%,
+      transparent 38%,
+      transparent 62%,
+      rgba(232,226,216,.15) 83%,
+      #e8e2d8 100%
+    ),
+    linear-gradient(
+      to bottom,
+      #e8e2d8 0%,
+      transparent 20%,
+      transparent 75%,
+      #e8e2d8 100%
+    ),
+    url("video pro carte do banner/esquerda.png"),
+    url("video pro carte do banner/direita.jpg") !important;
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    58% 100%,
+    58% 100% !important;
+
+  background-position:
+    center,
+    center,
+    left center,
+    right center !important;
+
+  background-repeat: no-repeat !important;
+}
+
+/* Preservar iPhone e vídeo na frente */
+.hero-image video {
+  z-index: 2 !important;
+}
+
+/* DEGRADE SUAVE NAS FOTOS DO BANNER */
+
+.hero-image {
+  background-image:
+    linear-gradient(
+      to right,
+      #e8e2d8 0%,
+      rgba(232,226,216,.65) 10%,
+      rgba(232,226,216,0) 32%,
+      rgba(232,226,216,0) 70%,
+      rgba(232,226,216,.45) 90%,
+      #e8e2d8 100%
+    ),
+    linear-gradient(
+      to bottom,
+      #e8e2d8 0%,
+      transparent 22%,
+      transparent 72%,
+      #e8e2d8 100%
+    ),
+    url("video pro carte do banner/esquerda.png"),
+    url("video pro carte do banner/direita.jpg") !important;
+
+  background-size:
+    100% 100%,
+    100% 100%,
+    58% 100%,
+    58% 100% !important;
+
+  background-position:
+    center,
+    center,
+    left center,
+    right center !important;
+
+  background-repeat: no-repeat !important;
+}
+
+/* TRANSICAO SUAVE ENTRE TEXTO E FOTOGRAFIAS */
+
+.hero-image {
+  position: relative !important;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,.15) 7%,
+    rgba(0,0,0,.55) 17%,
+    #000 32%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,.15) 7%,
+    rgba(0,0,0,.55) 17%,
+    #000 32%
+  );
+}
+
+
