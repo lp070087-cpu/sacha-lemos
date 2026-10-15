@@ -1,0 +1,18 @@
+SACHA LEMOS — APRESENTAÇÃO DEMONSTRATIVA
+
+1. Abra index.html no navegador. Não é necessário instalar Node ou npm.
+2. Navegue pelo site, clique nos tratamentos, simule um agendamento e abra a área do paciente.
+3. Dados de agendamento e perfil são salvos apenas no navegador (localStorage). Não existe banco de dados, autenticação real, pagamento ou disponibilidade verdadeira.
+4. Substitua as imagens em assets/img por fotos autorizadas da profissional. As imagens atuais são capturas dos prints enviados, com textos e elementos da interface visíveis. São PROVISÓRIAS, não são arquivos fotográficos originais.
+5. Para trocar as fotos, substitua os arquivos referencia-1.jpg a referencia-6.jpg, mantendo os nomes, ou altere os caminhos no script.js.
+6. Para publicação demo, envie os arquivos para GitHub e hospede como site estático na Vercel.
+7. Antes da versão de produção: implementar autenticação segura, banco de dados, agenda com bloqueio de conflitos, políticas de cancelamento, consentimento e privacidade/LGPD, notificações e informações oficiais da profissional.
+8. Não divulgar resultados garantidos, avaliações inventadas ou qualificações não confirmadas.
+
+
+PAINEL ADMINISTRATIVO
+Abra admin.html e clique em Entrar no painel. O acesso é demonstrativo, sem senha.
+A agenda do admin compartilha os agendamentos com o site do paciente neste mesmo navegador via localStorage.
+Use Inserir exemplos para preencher o painel com dados fictícios.
+Configurações e serviços do admin são demonstrativos e ainda não controlam a disponibilidade real do site.
+Não use esta demo para dados reais de pacientes; não há autenticação, servidor ou proteção de dados.
